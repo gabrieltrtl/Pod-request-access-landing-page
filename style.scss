@@ -30,3 +30,226 @@ a {
 button {
   border: none;
 }
+
+// Project Start
+
+body {
+  font-family: "Chivo", sans-serif;
+  min-height: 100vh;
+  background: $color6;
+  background-image: url(./assets/mobile/image-host.jpg);
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include device(tablet) {
+    background-image: url(./assets/tablet/image-host.jpg), url(./assets/desktop/bg-pattern-dots.svg);
+    background-blend-mode: initial;
+    background-position: top right, bottom left 30px;
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto;
+    padding-bottom: 257px;
+    @include device(desktop) {
+      display: grid;
+      background-image: url(./assets/desktop/bg-pattern-dots.svg), url(./assets/desktop/image-host.jpg);
+      background-position: bottom 78px right, top 130px right;
+      padding-bottom: 0px;
+      align-items: center;
+    }
+  }
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 327px;
+  margin: 62px auto 94px auto;
+  text-align: center;
+  justify-items: center;
+  @include device(tablet) {
+    grid-template-columns: 1fr 1fr;
+    max-width: initial;
+    justify-items: initial;
+    margin: 50px 94px auto 39px;
+    text-align: left;
+  }
+  @include device(desktop) {
+    margin: 102px 0 auto 165px;
+    margin: 0 0 0 165px;
+  }
+}
+
+.hero__header {
+  margin-bottom: 57px;
+  grid-column: span 2;
+  @include device(tablet) {
+    margin-bottom: 152px;
+  }
+  @include device(desktop) {
+    margin-bottom: 103px;
+  }
+}
+
+.hero__content {
+  @include device(tablet) {
+    padding-top: 93px;
+    padding-bottom: 5px;
+    max-width: 635px;
+    background-color: $color6;
+    grid-column: span 2;
+    display: grid;
+  }
+  @include device(desktop) {
+    padding-top: 88px;
+    padding-bottom: 8px;
+    max-width: 723px;
+  }
+}
+
+.hero__title {
+  font-size: map-get($fonts, "$medium2");
+  font-weight: 200;
+  line-height: 1.45;
+  text-transform: uppercase;
+  color: $color1;
+  margin-bottom: 16px;
+  span {
+    color: $color2;
+  }
+  @include device(tablet) {
+  font-size: map-get($fonts, "$large1");
+  line-height: 1.16;
+  margin-bottom: 31px;
+  }
+  @include device(desktop) {
+  font-size: map-get($fonts, "$large2");
+  margin-bottom: 24px;
+  }
+}
+
+.hero__text {
+  font-size: map-get($fonts, "$small");
+  line-height: 1.66;
+  font-weight: 200;
+  color: $color3;
+  margin-bottom: 33px;
+  @include device(tablet) {
+   font-size: map-get($fonts, "$medium1");
+    line-height: 1.5;
+    max-width: 40ch;
+    margin-bottom: 40px;
+    
+  }
+}
+
+.hero__partners {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 48px;
+  @include device(tablet) {
+    order: 4;
+    margin-bottom: initial;
+    max-width: 535px;
+  }
+}
+
+
+.logo__spotify {
+  max-width: 56px;
+  @include device(tablet) {
+    max-width: 95px;
+  }
+}
+
+.logo__apple {
+  max-width: 45px;
+  @include device(tablet) {
+    max-width: 78px;
+  }
+}
+
+.logo__google {
+  max-width: 73px;
+  @include device(tablet) {
+    max-width: 125px;
+  }
+}
+
+.logo__pocket {
+  max-width: 77px;
+  @include device(tablet) {
+    max-width: 129px;
+  }
+}
+
+form {
+  @include device(tablet) {
+    margin-bottom: 64px;
+  }
+}
+
+.input-wrapper {
+  @include device(tablet) {
+    position: relative;
+    max-width: 427px;
+  }
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+input[type="email"] {
+  display: block;
+  margin-bottom: 16px;
+  width: 100%;
+  background-color: $color5;
+  border: none;
+  border-radius: 28px;
+  padding: 9px 0 9px 32px;
+  line-height: 1.75;
+  &::placeholder {
+    color: $color1;
+    font-size: map-get($fonts, "$xsmall");
+    opacity: 0.5;
+    font-weight: 700;
+  }
+  @include device(tablet) {
+    padding: 14px 0 14px 32px;
+    margin-bottom: 0;
+  }
+}
+
+.form__btn {
+  width: 100%;
+  background-color: $color2;
+  color: $color6;
+  font-size: map-get($fonts, "$xsmall");
+  line-height: 2;
+  font-weight: 700;
+  border-radius: 28px;
+  padding: 9px 0;
+  @include device(tablet) {
+    position: absolute;
+    width: initial;
+    top: 50%; /* Define a parte superior para 50% do contêiner */
+    right: 5px;
+    transform: translateY(-50%);
+    padding: 9px 27px;
+  }
+}
+
+.error {
+  color: #FB3E3E;
+  position: relative;
+  top: 8px;
+  left: 32px;
+}

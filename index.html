@@ -3,17 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Pod request access landing page</title>
 </head>
 <body>
-  Publish your podcasts everywhere.
-
-  Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify, 
-  Apple Podcasts, Google Podcasts, Pocket Casts and more!
-
-  Request access
+  <div class="hero">
+    <header class="hero__header">
+      <img src="./assets/desktop/logo.svg" alt="">
+    </header>
+    <main class="hero__content">
+      <h1 class="hero__title"><span>Publish your podcasts</span> everywhere.</h1>
+      <p class="hero__text">
+        Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify,
+        Apple Podcasts, Google Podcasts, Pocket Casts and more!
+      </p>
+      <div class="hero__partners">
+        <img class="partners__logo logo__spotify" src="./assets/desktop/spotify.svg" alt="">
+        <img class="partners__logo logo__apple" src="./assets/desktop/apple-podcast.svg" alt="">
+        <img class="partners__logo logo__google" src="./assets/desktop/google-podcasts.svg" alt="">
+        <img class="partners__logo logo__pocket" src="./assets/desktop/pocket-casts.svg" alt="">
+      </div>
+      <form class="hero__form" action="/" novalidate>
+        <div class="input-wrapper">
+          <label class="sr-only" for="email">Email</label>
+          <input type="email" id="email" placeholder="Email address" required>
+          <button type="submit" class="form__btn">Request access</button>
+        </div>
+        <span class="hidden error"></span>
+      </form>
+    </main>
+  </div>
+  <script src="./main.js"></script>
 </body>
 </html>

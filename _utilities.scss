@@ -14,14 +14,19 @@
 
 // Colors
 $color1: #FFFFFF;
-$color2: #ECF2F8;
-$color3: #9DAEC2;
-$color4: #6E8098;
-$color5: #48556A; 
+$color2: #54E6AF;
+$color3: #C2CBE5;
+$color4: #5A668A;
+$color5: #2C344B; 
+$color6: #121725;
+
 
 //Typography
 $fonts: (
-  "$small": 13px,
-  "$medium": 16px,
-  "$large": 20px,
+  "$xsmall": 14px,
+  "$small": 15px,
+  "$medium1": 18px,
+  "$medium2": 26px,
+  "$large1": 48px,
+  "$large2": 52px,
 );
