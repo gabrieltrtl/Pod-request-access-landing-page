@@ -44,14 +44,14 @@ body {
   @include device(tablet) {
     background-image: url(./assets/tablet/image-host.jpg), url(./assets/desktop/bg-pattern-dots.svg);
     background-blend-mode: initial;
-    background-position: top right, bottom left 30px;
+    background-position: top right, bottom left 1.875rem;
     background-repeat: no-repeat, no-repeat;
     background-size: auto;
-    padding-bottom: 257px;
+    padding-bottom: 16.0625rem;
     @include device(desktop) {
       display: grid;
       background-image: url(./assets/desktop/bg-pattern-dots.svg), url(./assets/desktop/image-host.jpg);
-      background-position: bottom 78px right, top 130px right;
+      background-position: bottom 4.875rem right, top 8.125rem right;
       padding-bottom: 0px;
       align-items: center;
     }
@@ -61,47 +61,47 @@ body {
 .hero {
   display: grid;
   grid-template-columns: 1fr;
-  max-width: 327px;
-  margin: 62px auto 94px auto;
+  max-width: 20.4375rem;
+  margin: 3.875rem auto 5.875rem auto;
   text-align: center;
   justify-items: center;
   @include device(tablet) {
     grid-template-columns: 1fr 1fr;
     max-width: initial;
     justify-items: initial;
-    margin: 50px 94px auto 39px;
+    margin: 3.125rem 5.875rem auto 2.4375rem;
     text-align: left;
   }
   @include device(desktop) {
-    margin: 102px 0 auto 165px;
-    margin: 0 0 0 165px;
+    margin: 6.375rem 0 auto 10.3125rem;
+    margin: 0 0 0 10.3125rem;
   }
 }
 
 .hero__header {
-  margin-bottom: 57px;
+  margin-bottom: 3.5625rem;
   grid-column: span 2;
   @include device(tablet) {
-    margin-bottom: 152px;
+    margin-bottom: 9.5rem;
   }
   @include device(desktop) {
-    margin-bottom: 103px;
+    margin-bottom: 6.4375rem;
   }
 }
 
 .hero__content {
   @include device(tablet) {
-    padding-top: 93px;
-    padding-bottom: 5px;
-    max-width: 635px;
+    padding-top: 5.8125rem;
+    padding-bottom: 0.3125rem;
+    max-width: 39.6875rem;
     background-color: $color6;
     grid-column: span 2;
     display: grid;
   }
   @include device(desktop) {
-    padding-top: 88px;
-    padding-bottom: 8px;
-    max-width: 723px;
+    padding-top: 5.5rem;
+    padding-bottom: 0.5rem;
+    max-width: 45.1875rem;
   }
 }
 
@@ -111,18 +111,18 @@ body {
   line-height: 1.45;
   text-transform: uppercase;
   color: $color1;
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
   span {
     color: $color2;
   }
   @include device(tablet) {
   font-size: map-get($fonts, "$large1");
   line-height: 1.16;
-  margin-bottom: 31px;
+  margin-bottom: 1.9375rem;
   }
   @include device(desktop) {
   font-size: map-get($fonts, "$large2");
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
   }
 }
 
@@ -131,12 +131,12 @@ body {
   line-height: 1.66;
   font-weight: 200;
   color: $color3;
-  margin-bottom: 33px;
+  margin-bottom: 2.0625rem;
   @include device(tablet) {
    font-size: map-get($fonts, "$medium1");
     line-height: 1.5;
     max-width: 40ch;
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
     
   }
 }
@@ -145,53 +145,53 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 48px;
+  margin-bottom: 3rem;
   @include device(tablet) {
     order: 4;
     margin-bottom: initial;
-    max-width: 535px;
+    max-width: 33.4375rem;
   }
 }
 
 
 .logo__spotify {
-  max-width: 56px;
+  max-width: 3.5rem;
   @include device(tablet) {
-    max-width: 95px;
+    max-width: 5.9375rem;
   }
 }
 
 .logo__apple {
-  max-width: 45px;
+  max-width: 2.8125rem;
   @include device(tablet) {
-    max-width: 78px;
+    max-width: 4.875rem;
   }
 }
 
 .logo__google {
-  max-width: 73px;
+  max-width: 4.5625rem;
   @include device(tablet) {
-    max-width: 125px;
+    max-width: 7.8125rem;
   }
 }
 
 .logo__pocket {
-  max-width: 77px;
+  max-width: 4.8125rem;
   @include device(tablet) {
-    max-width: 129px;
+    max-width: 8.0625rem;
   }
 }
 
 form {
   @include device(tablet) {
-    margin-bottom: 64px;
+    margin-bottom: 4rem;
   }
 }
 
 .input-wrapper {
   @include device(tablet) {
     position: relative;
-    max-width: 427px;
+    max-width: 26.6875rem;
   }
 }
 
@@ -209,12 +209,12 @@ form {
 
 input[type="email"] {
   display: block;
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
   width: 100%;
   background-color: $color5;
   border: none;
   border-radius: 28px;
-  padding: 9px 0 9px 32px;
+  padding: 0.5625rem 0 0.5625rem 2rem;
   line-height: 1.75;
   &::placeholder {
     color: $color1;
@@ -223,7 +223,7 @@ input[type="email"] {
     font-weight: 700;
   }
   @include device(tablet) {
-    padding: 14px 0 14px 32px;
+    padding: 0.875rem 0 0.875rem 2rem;
     margin-bottom: 0;
   }
 }
@@ -236,14 +236,17 @@ input[type="email"] {
   line-height: 2;
   font-weight: 700;
   border-radius: 28px;
-  padding: 9px 0;
+  padding: 0.5625rem 0;
+  &:hover {
+    background-color: #B3FFE2;
+  }
   @include device(tablet) {
     position: absolute;
     width: initial;
     top: 50%; /* Define a parte superior para 50% do contêiner */
     right: 5px;
     transform: translateY(-50%);
-    padding: 9px 27px;
+    padding: 0.5625rem 1.6875rem;
   }
 }
 

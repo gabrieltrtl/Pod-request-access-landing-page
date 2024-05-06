@@ -1,7 +1,7 @@
 // Media Query
 @mixin device($device) {
   @if $device == tablet {
-    @media (min-width: 700px) {
+    @media (min-width: 43.75rem) {
       @content;
     }
   }  
@@ -23,10 +23,10 @@ $color6: #121725;
 
 //Typography
 $fonts: (
-  "$xsmall": 14px,
-  "$small": 15px,
-  "$medium1": 18px,
-  "$medium2": 26px,
-  "$large1": 48px,
-  "$large2": 52px,
+  "$xsmall": 0.875rem,
+  "$small": 0.9375rem,
+  "$medium1": 1.125rem,
+  "$medium2": 1.625rem,
+  "$large1": 3rem,
+  "$large2": 3.25rem,
 );

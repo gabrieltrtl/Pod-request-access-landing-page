@@ -37,21 +37,21 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-@media (min-width: 700px) {
+@media (min-width: 43.75rem) {
   body {
     background-image: url(./assets/tablet/image-host.jpg), url(./assets/desktop/bg-pattern-dots.svg);
     background-blend-mode: initial;
-    background-position: top right, bottom left 30px;
+    background-position: top right, bottom left 1.875rem;
     background-repeat: no-repeat, no-repeat;
     background-size: auto;
-    padding-bottom: 257px;
+    padding-bottom: 16.0625rem;
   }
 }
-@media (min-width: 700px) and (min-width: 75rem) {
+@media (min-width: 43.75rem) and (min-width: 75rem) {
   body {
     display: grid;
     background-image: url(./assets/desktop/bg-pattern-dots.svg), url(./assets/desktop/image-host.jpg);
-    background-position: bottom 78px right, top 130px right;
+    background-position: bottom 4.875rem right, top 8.125rem right;
     padding-bottom: 0px;
     align-items: center;
   }
@@ -60,47 +60,47 @@ body {
 .hero {
   display: grid;
   grid-template-columns: 1fr;
-  max-width: 327px;
-  margin: 62px auto 94px auto;
+  max-width: 20.4375rem;
+  margin: 3.875rem auto 5.875rem auto;
   text-align: center;
   justify-items: center;
 }
-@media (min-width: 700px) {
+@media (min-width: 43.75rem) {
   .hero {
     grid-template-columns: 1fr 1fr;
     max-width: initial;
     justify-items: initial;
-    margin: 50px 94px auto 39px;
+    margin: 3.125rem 5.875rem auto 2.4375rem;
     text-align: left;
   }
 }
 @media (min-width: 75rem) {
   .hero {
-    margin: 102px 0 auto 165px;
-    margin: 0 0 0 165px;
+    margin: 6.375rem 0 auto 10.3125rem;
+    margin: 0 0 0 10.3125rem;
   }
 }
 
 .hero__header {
-  margin-bottom: 57px;
+  margin-bottom: 3.5625rem;
   grid-column: span 2;
 }
-@media (min-width: 700px) {
+@media (min-width: 43.75rem) {
   .hero__header {
-    margin-bottom: 152px;
+    margin-bottom: 9.5rem;
   }
 }
 @media (min-width: 75rem) {
   .hero__header {
-    margin-bottom: 103px;
+    margin-bottom: 6.4375rem;
   }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 43.75rem) {
   .hero__content {
-    padding-top: 93px;
-    padding-bottom: 5px;
-    max-width: 635px;
+    padding-top: 5.8125rem;
+    padding-bottom: 0.3125rem;
+    max-width: 39.6875rem;
     background-color: #121725;
     grid-column: span 2;
     display: grid;
@@ -108,50 +108,50 @@ body {
 }
 @media (min-width: 75rem) {
   .hero__content {
-    padding-top: 88px;
-    padding-bottom: 8px;
-    max-width: 723px;
+    padding-top: 5.5rem;
+    padding-bottom: 0.5rem;
+    max-width: 45.1875rem;
   }
 }
 
 .hero__title {
-  font-size: 26px;
+  font-size: 1.625rem;
   font-weight: 200;
   line-height: 1.45;
   text-transform: uppercase;
   color: #FFFFFF;
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 .hero__title span {
   color: #54E6AF;
 }
-@media (min-width: 700px) {
+@media (min-width: 43.75rem) {
   .hero__title {
-    font-size: 48px;
+    font-size: 3rem;
     line-height: 1.16;
-    margin-bottom: 31px;
+    margin-bottom: 1.9375rem;
   }
 }
 @media (min-width: 75rem) {
   .hero__title {
-    font-size: 52px;
-    margin-bottom: 24px;
+    font-size: 3.25rem;
+    margin-bottom: 1.5rem;
   }
 }
 
 .hero__text {
-  font-size: 15px;
+  font-size: 0.9375rem;
   line-height: 1.66;
   font-weight: 200;
   color: #C2CBE5;
-  margin-bottom: 33px;
+  margin-bottom: 2.0625rem;
 }
-@media (min-width: 700px) {
+@media (min-width: 43.75rem) {
   .hero__text {
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 1.5;
     max-width: 40ch;
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
   }
 }
 
@@ -159,62 +159,62 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 48px;
+  margin-bottom: 3rem;
 }
-@media (min-width: 700px) {
+@media (min-width: 43.75rem) {
   .hero__partners {
     order: 4;
     margin-bottom: initial;
-    max-width: 535px;
+    max-width: 33.4375rem;
   }
 }
 
 .logo__spotify {
-  max-width: 56px;
+  max-width: 3.5rem;
 }
-@media (min-width: 700px) {
+@media (min-width: 43.75rem) {
   .logo__spotify {
-    max-width: 95px;
+    max-width: 5.9375rem;
   }
 }
 
 .logo__apple {
-  max-width: 45px;
+  max-width: 2.8125rem;
 }
-@media (min-width: 700px) {
+@media (min-width: 43.75rem) {
   .logo__apple {
-    max-width: 78px;
+    max-width: 4.875rem;
   }
 }
 
 .logo__google {
-  max-width: 73px;
+  max-width: 4.5625rem;
 }
-@media (min-width: 700px) {
+@media (min-width: 43.75rem) {
   .logo__google {
-    max-width: 125px;
+    max-width: 7.8125rem;
   }
 }
 
 .logo__pocket {
-  max-width: 77px;
+  max-width: 4.8125rem;
 }
-@media (min-width: 700px) {
+@media (min-width: 43.75rem) {
   .logo__pocket {
-    max-width: 129px;
+    max-width: 8.0625rem;
   }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 43.75rem) {
   form {
-    margin-bottom: 64px;
+    margin-bottom: 4rem;
   }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 43.75rem) {
   .input-wrapper {
     position: relative;
-    max-width: 427px;
+    max-width: 26.6875rem;
   }
 }
 
@@ -232,23 +232,23 @@ body {
 
 input[type=email] {
   display: block;
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
   width: 100%;
   background-color: #2C344B;
   border: none;
   border-radius: 28px;
-  padding: 9px 0 9px 32px;
+  padding: 0.5625rem 0 0.5625rem 2rem;
   line-height: 1.75;
 }
 input[type=email]::placeholder {
   color: #FFFFFF;
-  font-size: 14px;
+  font-size: 0.875rem;
   opacity: 0.5;
   font-weight: 700;
 }
-@media (min-width: 700px) {
+@media (min-width: 43.75rem) {
   input[type=email] {
-    padding: 14px 0 14px 32px;
+    padding: 0.875rem 0 0.875rem 2rem;
     margin-bottom: 0;
   }
 }
@@ -257,20 +257,23 @@ input[type=email]::placeholder {
   width: 100%;
   background-color: #54E6AF;
   color: #121725;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 2;
   font-weight: 700;
   border-radius: 28px;
-  padding: 9px 0;
+  padding: 0.5625rem 0;
 }
-@media (min-width: 700px) {
+.form__btn:hover {
+  background-color: #B3FFE2;
+}
+@media (min-width: 43.75rem) {
   .form__btn {
     position: absolute;
     width: initial;
     top: 50%; /* Define a parte superior para 50% do contêiner */
     right: 5px;
     transform: translateY(-50%);
-    padding: 9px 27px;
+    padding: 0.5625rem 1.6875rem;
   }
 }
 
